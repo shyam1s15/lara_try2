@@ -21,8 +21,8 @@ class CreateAdminModelsTable extends Migration
             $table->text('admin_address')->nullable();
             $table->timestamps();
 
-            $table->foreign('admin_id')->references('hostel_id')
-            ->on('hostel_information_models')->onDelete('cascade');
+            // $table->foreign('admin_id')->references('hostel_id')
+            // ->on('hostel_information_models')->onDelete('cascade');
         });
     }
 
