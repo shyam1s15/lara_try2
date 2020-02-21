@@ -89,6 +89,13 @@ Route::get('test5', function() {
     return view("index");
 });
 
+Route::get("test6",function (){
+     return view("hostel/UpdateHostelInfo"); 
+});
+
+Route::get("test7",function (){
+    return view("hostel/AddRooms"); 
+});
 
 Route::get('test/rooms', function() {
     return view('rooms.index');

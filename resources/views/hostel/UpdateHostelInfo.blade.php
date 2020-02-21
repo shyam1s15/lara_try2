@@ -1,0 +1,50 @@
+@extends('master.base')
+
+@section('content')
+<div id="grad1">
+    <div class="container">
+        <div class="row">
+        <form action="" method="POST" style="margin : auto ">
+            <h2 style="margin : 20px 50px ">Update Hostel Information</h2>
+            
+            <div class="form-group" >
+            <label ><img src="{{ url('/img/hostel_nm.png') }}" height="30px" alt="" style="margin-right:10px">Hostel Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter Hostel Name">   
+            </div>
+
+            <div class="form-group" >
+            <label ><img src="{{ url('/img/address.png') }}" height="30px" alt="" style="margin-right:10px">Address</label>
+            <input type="text" class="form-control" name="address" placeholder="Enter Address">   
+            </div>
+
+            <div class="form-group" >
+            <label ><img src="{{ url('/img/category.png') }}" height="30px" alt="" style="margin-right:10px">Category</label>
+            <input type="text" class="form-control" name="category" placeholder="Enter Category">   
+            </div>
+
+            <div class="form-group" >
+            <label ><img src="{{ url('/img/description.png') }}" height="30px" alt="" style="margin-right:10px">Description</label>
+            <textarea class="form-control" name="description" placeholder="Enter Category">   </textarea>
+            </div>
+
+            <div class="form-group" >
+            <label ><img src="{{ url('/img/contact.png') }}" height="30px" alt="" style="margin-right:10px">Hostel Contact</label>
+            <input type="text" class="form-control" name="contact" placeholder="Enter Contact">   
+            </div>
+
+            <div class="form-group" >
+            <label ><img src="{{ url('/img/email.png') }}" height="30px" alt="" style="margin-right:10px">Hostel E-Mail</label>
+            <input type="email" class="form-control" name="email" placeholder="Enter E-Mail">   
+            </div>
+
+            <div class="form-group" >
+            <input type="submit" value="Update" class="btn" style="background-color : red; color:white; margin-left:190px; margin-bottom:20px " >
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+
+
+@endsection

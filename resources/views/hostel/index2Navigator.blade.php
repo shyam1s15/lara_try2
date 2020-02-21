@@ -22,37 +22,37 @@ font-size: large;
 <div id="grad1">
     <div class="container">
         <div class="row">
-            <a href="#">
+            <a href="/test6">
                 <button type="button" class="btn btn-warning big-btns">
                     <p class="big-btn-text">Update Hostel Information</p>
                 </button>
             </a>
-            <a href="">
+            <a href="#">
                 <button type="button" class="btn btn-success big-btns">
                     <p class="big-btn-text">Important notice</p>
                 </button>
             </a>
-            <a href="">
+            <a href="#">
                 <button type="button" class="btn btn-warning big-btns">
                     <p class="big-btn-text">Admint/graduate students</p>
                 </button>
             </a>
-            <a href="">
+            <a href="#">
                 <button type="button" class="btn btn-info big-btns">
                     <p class="big-btn-text">Update co-workers</p>
                 </button>
             </a>
-            <a href="">
+            <a href="#">
                 <button type="button" class="btn btn-info big-btns">
                     <p class="big-btn-text">Get Various Records</p>
                 </button>
             </a>
-            <a href="">
+            <a href="#">
                 <button type="button" class="btn btn-warning big-btns">
                     <p class="big-btn-text">Billing Information</p>
                 </button>
             </a>
-            <a href="">
+            <a href="/test7">
                 <button type="button" class="btn btn-success big-btns">
                     <p class="big-btn-text">Add Rooms</p>
                 </button>
