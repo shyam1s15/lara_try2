@@ -15,6 +15,7 @@ class CreateSUsersTable extends Migration
     {
         Schema::create('s_users', function (Blueprint $table) {
             $table->bigIncrements('sUsers_id');
+            
             $table->char('sUsers_name', 50)->default('');
             $table->string('sUsers_email', 100)->nullable()->default('example@io.com');
             $table->string('sUsers_contact', 100)->nullable()->default('+91');

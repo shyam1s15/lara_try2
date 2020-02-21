@@ -16,8 +16,8 @@ class CreateHostelInformationModelsTable extends Migration
         Schema::create('hostel_information_models', function (Blueprint $table) {
             $table->bigIncrements('hostel_id');
 
-            $table->foreign('hostel_id')->references('sUsers_id')
-            ->on('s_users')->onDelete('cascade');
+            // $table->foreign('hostel_id')->references('sUsers_id')
+            // ->on('s_users')->onDelete('cascade');
 
             $table->string('hostel_name',60)->default('Easy Hostels');
             $table->text('hostel_address')->nullable();
