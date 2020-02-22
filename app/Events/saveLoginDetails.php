@@ -20,10 +20,12 @@ class saveLoginDetails
      * @return void
      */
     public $user;
+    public $user_exists;
     public function __construct($user)
     {
         //
         $this->user = $user;
+        $user_exists=0;
     }
 
     /**

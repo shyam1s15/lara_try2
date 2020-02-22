@@ -31,7 +31,7 @@ class adminLoginController extends Controller
             print_r($value);
             echo ("<br>");
         }
-        \event(new saveLoginDetails());
+        \event(new saveLoginDetails($user));
         \event(new TheNewGuyEvent());
         // return \redirect('test2');
     }

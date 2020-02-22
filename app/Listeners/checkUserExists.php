@@ -27,5 +27,7 @@ class checkUserExists
     public function handle(saveLoginDetails $event)
     {
         //
+        echo $event->user->getName();
+        dd("ok => that's Your signature, i know you");   
     }
 }
