@@ -27,5 +27,14 @@ class insertUserIfNotExists
     public function handle(saveLoginDetails $event)
     {
         //
+        if($event->user_exists != 0){
+            // \redirect("test/hostel");
+            // dd("hello");
+            return 0;
+        }
+        \DB::insert('insert into s_users (sUsers_name, sUsers_email) values (?, ?)'
+        , [$event->user->getName(), $event->user->getEmail()]);
+        // dd("record inserted successfully");
+        return 0;
     }
 }

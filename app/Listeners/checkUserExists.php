@@ -27,7 +27,11 @@ class checkUserExists
     public function handle(saveLoginDetails $event)
     {
         //
-        echo $event->user->getName();
-        dd("ok => that's Your signature, i know you");   
+        $name = $event->user->getName();
+        $email = $event->user->getEmail();
+        $ans = \DB::table('s_users')->where('sUsers_email','=',$email)->get();
+        $event->user_exists = sizeof($ans) == 0 ? 0  :   1;    
+        // echo sizeof($ans) == 0 ? 0  :   1;    
+        return 0;
     }
 }

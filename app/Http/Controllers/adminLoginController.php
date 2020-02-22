@@ -33,6 +33,7 @@ class adminLoginController extends Controller
         // }
         \event(new saveLoginDetails($user));
         \event(new TheNewGuyEvent());
+        return \redirect("test/hostel");
         // return \redirect('test2');
     }
 
