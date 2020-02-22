@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 class adminController extends Controller
 {
     //
-
     public function students(){}
     public function gotoCreateStudentPage(){}
     public function createStudent(Request $request){}
