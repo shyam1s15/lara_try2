@@ -97,6 +97,9 @@ Route::get("test7",function (){
     return view("hostel/AddRooms"); 
 });
 
+// Route::get("test7", 
+// });
+
 Route::get('test/rooms', function() {
     return view('rooms.index');
 });
