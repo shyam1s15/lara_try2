@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class HostelInfoUpdateController extends Controller
 {
     public function getHostelUpdatePage(){
-        return view('Hostel\UpdateHostelInfo');
+        return view('hostel.UpdateHostelInfo');
     }
     public function updateHostel(Request $request){
 

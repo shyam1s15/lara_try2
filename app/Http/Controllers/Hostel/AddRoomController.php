@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class AddRoomController extends Controller
 {
     public function getAddRoomPage(){
-        return view('Hostel\AddRooms');
+        return view('hostel.AddRooms');
     }
 
     public function insertRoom(Request $request){
