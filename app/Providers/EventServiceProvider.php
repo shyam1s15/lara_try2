@@ -22,6 +22,10 @@ class EventServiceProvider extends ServiceProvider
             "App\Listeners\SendWelcomeMailListner",
             "App\Listeners\ShowHimSystemGuideListner",
         ],
+        'App\Events\saveLoginDetails'=>[
+            "App\Listeners\checkUserExists",
+            "App\Listeners\insertUserIfNotExists",
+        ],
     ];
 
     /**

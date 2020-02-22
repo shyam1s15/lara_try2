@@ -19,9 +19,9 @@ class CreateSectorModelsTable extends Migration
             $table->string('sector_location', 200)->nullable()->default('');
 
             $table->timestamps();
+            
             $table->foreign('sector_id')->references('hostel_id')
             ->on('hostel_information_models')->onDelete('cascade');
-            
         });
     }
 

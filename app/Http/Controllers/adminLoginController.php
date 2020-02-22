@@ -7,6 +7,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Socialite;
 use App\Events\TheNewGuyEvent;
+use App\Events\saveLoginDetails;
 use Illuminate\Http\Request;
 // namespace App\Http\Controllers\Auth;
 
@@ -30,7 +31,7 @@ class adminLoginController extends Controller
             print_r($value);
             echo ("<br>");
         }
-
+        \event(new saveLoginDetails());
         \event(new TheNewGuyEvent());
         // return \redirect('test2');
     }
