@@ -3,6 +3,8 @@ This Guide is for begginers, please enjoy all the commands to have the rocking s
 
 <h3>Commands are listed below</h3>
 <ol>
+<li>You must have git installed(https://git-scm.com/download/win)</li>
+<li>You must have php installed(command line)if xampp already installed try(https://stackoverflow.com/questions/31291317/php-is-not-recognized-as-an-internal-or-external-command-in-command-prompt)</li>
 <li>composer update</li> 
 <li>cp .env.example .env</li>
 <li>php artisan key:generate</li> 

@@ -25,12 +25,12 @@ class adminLoginController extends Controller
     public function googleCredentialLogin(){
         $user = Socialite::driver('google')->stateless()->user();
         
-        foreach($user as $key=>$value){
-            print_r( $key);
-            echo " : "; 
-            print_r($value);
-            echo ("<br>");
-        }
+        // foreach($user as $key=>$value){
+        //     print_r( $key);
+        //     echo " : "; 
+        //     print_r($value);
+        //     echo ("<br>");
+        // }
         \event(new saveLoginDetails($user));
         \event(new TheNewGuyEvent());
         // return \redirect('test2');
