@@ -89,16 +89,13 @@ Route::get('test5', function() {
     return view("index");
 });
 
-Route::get("test6",function (){
-     return view("hostel/UpdateHostelInfo"); 
-});
+Route::get("getHostelUpdatePage", "Hostel\HostelInfoUpdateController@getHostelUpdatePage");
 
-Route::get("test7",function (){
-    return view("hostel/AddRooms"); 
-});
+Route::post("updateHostel","Hostel\HostelInfoUpdateController@updateHostel");
 
-// Route::get("test7", 
-// });
+Route::get("getAddRoomPage", "Hostel\AddRoomController@getAddRoomPage");
+
+Route::post("insertRoom","Hostel\AddRoomController@insertRoom");
 
 Route::get('test/rooms', function() {
     return view('rooms.index');

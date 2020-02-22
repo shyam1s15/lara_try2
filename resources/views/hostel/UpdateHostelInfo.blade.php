@@ -4,7 +4,7 @@
 <div id="grad1">
     <div class="container">
         <div class="row">
-        <form action="" method="POST" style="margin : auto ">
+        <form action="/updateHostel" method="POST" style="margin : auto ">
             <h2 style="margin : 20px 50px ">Update Hostel Information</h2>
             
             <div class="form-group" >

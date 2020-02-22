@@ -8,7 +8,7 @@
 <div id="grad1">
     <div class="container">
         <div class="row">
-        <form action="" method="POST" style="margin : auto ">
+        <form action="insertRoom" method="POST" style="margin : auto ">
             <h2 style="margin : 20px 150px ">Add Rooms</h2>
             
             <div class="form-group" >

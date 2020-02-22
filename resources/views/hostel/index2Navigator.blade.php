@@ -22,7 +22,7 @@ font-size: large;
 <div id="grad1">
     <div class="container">
         <div class="row">
-            <a href="/test6">
+            <a href="/getHostelUpdatePage">
                 <button type="button" class="btn btn-warning big-btns">
                     <p class="big-btn-text">Update Hostel Information</p>
                 </button>
@@ -52,7 +52,7 @@ font-size: large;
                     <p class="big-btn-text">Billing Information</p>
                 </button>
             </a>
-            <a href="/test7">
+            <a href="/getAddRoomPage">
                 <button type="button" class="btn btn-success big-btns">
                     <p class="big-btn-text">Add Rooms</p>
                 </button>
