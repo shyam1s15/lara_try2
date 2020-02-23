@@ -12,6 +12,6 @@ class HostelInformationModelSeeder extends Seeder
     public function run()
     {
         //
-        factory(App\Hostel_informationModel::class,5)->create();
+        // factory(App\Hostel_informationModel::class,5)->create();
     }
 }

@@ -15,8 +15,8 @@ class FoodZoneSectors extends Migration
     {
         Schema::create('food_zone_sectors', function (Blueprint $table) {
             $table->bigIncrements('sector_id');
-            $table->foreign('sector_id')->references('mall_id')
-            ->on('food_zone_models')->onDelete('cascade');
+            // $table->foreign('sector_id')->references('mall_id')
+            // ->on('food_zone_models')->onDelete('cascade');
 
             $table->string('sector_name',40)->default('Sweat Feast');
             $table->timestamps();

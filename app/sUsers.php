@@ -16,4 +16,8 @@ class sUsers extends Model
         'sUsers_contact',
         'sUsers_address',
     ];
+
+    public function getHostel(){
+        return $this->hasOne('App\Hostel_informationModel','hostel_id');
+    }
 }

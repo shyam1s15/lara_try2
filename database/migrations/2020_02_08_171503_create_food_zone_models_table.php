@@ -15,8 +15,8 @@ class CreateFoodZoneModelsTable extends Migration
     {
         Schema::create('food_zone_models', function (Blueprint $table) {
             $table->bigIncrements('mall_id');
-            $table->foreign('mall_id')->references('hostel_id')
-            ->on('hostel_information_models')->onDelete('cascade');
+            // $table->foreign('mall_id')->references('hostel_id')
+            // ->on('hostel_information_models')->onDelete('cascade');
             
             $table->string('mall_name',80)->default('Cruchy FOod Mall');
             $table->text('mall_sector')->nullable();

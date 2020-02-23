@@ -22,6 +22,12 @@ class Hostel_informationModel extends Model
 
     public function admins()
     {
-        return $this->hasMany(adminModel::class);
+        // return $this->hasMany(adminModel::class);
     }
+    
+    public function s_users()
+    {
+        return $this->belongsTo('App\sUsers', 'hostel_id');
+    }
+    
 }

@@ -10,7 +10,7 @@ class adminModel extends Model
     
     public function hostel()
     {
-        return $this->belongsTo(Hostel_informationModel::class);
+        // return $this->belongsTo(Hostel_informationModel::class);
     }
     
 }

@@ -16,8 +16,8 @@ class CreateStudentsModelsTable extends Migration
         Schema::create('students_models', function (Blueprint $table) {
             $table->bigIncrements('stu_id');
             
-            $table->foreign('stu_id')->references('hostel_id')
-            ->on('hostel_information_models')->onDelete('cascade');
+            // $table->foreign('stu_id')->references('hostel_id')
+            // ->on('hostel_information_models')->onDelete('cascade');
             
             $table->timestamps();
         });

@@ -30,10 +30,15 @@ class insertUserIfNotExists
         if($event->user_exists != 0){
             // \redirect("test/hostel");
             // dd("hello");
+            \session(['email'=>$event->user->getEmail()]);
             return 0;
         }
         \DB::insert('insert into s_users (sUsers_name, sUsers_email) values (?, ?)'
         , [$event->user->getName(), $event->user->getEmail()]);
+        
+        \DB::insert('insert into hostel_information_models (hostel_name) values (?)', ['EasyHostels']);
+        
+        \session(['email'=>$event->user->getEmail()]);
         // dd("record inserted successfully");
         return 0;
     }
