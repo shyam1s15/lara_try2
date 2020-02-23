@@ -53,6 +53,7 @@ class insertUserIfNotExists
         // echo $id[1];
         // dd($id);
         // $hname = \DB::table('s_users')->where('sUsers_id','=',$id)->getHostel();
+        \session(['u_id'=>$id]);
         \session(['email'=>$email]);
         \session(['hname'=>$hname->hostel_name]);
         // print_r($hname);

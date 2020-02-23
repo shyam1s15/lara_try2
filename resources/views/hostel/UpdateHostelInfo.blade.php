@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
         <form action="{{ route('updateHostel') }}" method="POST" style="margin : auto ">
-            {{ csrf_token() }}
+            {{ csrf_field() }}
             <h2 style="margin : 20px 50px ">Update Hostel Information</h2>
             
             <div class="form-group" >
@@ -25,7 +25,7 @@
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/description.png') }}" height="30px" alt="" style="margin-right:10px">Description</label>
-            <textarea class="form-control" name="description" placeholder="Enter Category">   </textarea>
+            <textarea class="form-control" name="h-description" placeholder="Enter Category">   </textarea>
             </div>
 
             <div class="form-group" >
