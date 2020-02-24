@@ -113,7 +113,7 @@ Route::get('test/mobile', function () {
     return view("test.mobile");
 });
 // hello
-
+    
 
 Route::get('test/top-bar', function() {
     //
@@ -126,3 +126,9 @@ Route::get('test/vd/try1', function() {
     return view('hostel.student.addstudent');
 })->name("addStudent");
 //Git from Parthik123456
+
+
+Route::get('test/devansh/try1', function() {
+    //
+    return view("hostel.student.addstudent");
+})->name("addStudent");
