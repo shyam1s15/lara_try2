@@ -71,7 +71,7 @@ Route::get('test2',function (){
 });
 
 Route::get('test/login/google', 'Auth\LoginController@redirectToProvider');
-Route::get('test/login/google/callback', 'Auth\LoginController@handleProviderCallback');
+Route::post('test/login/google/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('test3',function (){
     return view('test.test');

@@ -22,5 +22,8 @@ class AddRoomController extends Controller
           return back()->withInput()
           ->with('start_index_error','The start index must be less than End index');
       }
+      $data = $request->session()->all();
+      print_r($data);
+      dd();
     }
 }
