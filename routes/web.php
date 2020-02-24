@@ -109,6 +109,7 @@ return view('hostel.index2Navigator');
 Route::get('test/mobile', function () {
     return view("test.mobile");
 });
+// hello
 
 
 Route::get('test/top-bar', function() {
