@@ -47,11 +47,11 @@ Route::group(['prefix' => 'admin','middleware' => ['adminLoginMiddleware'] ],fun
 
 Route::group(['prefix' => 'hostel'], function() {
     //
-    
+
     Route::get('/', function() {
-        // 
+        //
     });
-    
+
 });
 
 
