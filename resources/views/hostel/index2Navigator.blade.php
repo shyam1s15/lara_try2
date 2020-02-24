@@ -22,7 +22,7 @@ font-size: large;
 <div id="grad1">
     <div class="container">
         <div class="row">
-            <a href="/getHostelUpdatePage">
+            <a href="{{ route('hostelPage') }}">
                 <button type="button" class="btn btn-warning big-btns">
                     <p class="big-btn-text">Update Hostel Information</p>
                 </button>
@@ -32,7 +32,7 @@ font-size: large;
                     <p class="big-btn-text">Important notice</p>
                 </button>
             </a>
-            <a href="#">
+            <a href="{{ route('addStudent') }}">
                 <button type="button" class="btn btn-warning big-btns">
                     <p class="big-btn-text">Admint/graduate students</p>
                 </button>
@@ -52,9 +52,9 @@ font-size: large;
                     <p class="big-btn-text">Billing Information</p>
                 </button>
             </a>
-            <a href="/getAddRoomPage">
+            <a href="{{ route('addRoom') }}">
                 <button type="button" class="btn btn-success big-btns">
-                    <p class="big-btn-text">Add Rooms</p>
+                    <p class="big-btn-text">Add Rooms / Update Rooms</p>
                 </button>
             </a>
             <a href="#">

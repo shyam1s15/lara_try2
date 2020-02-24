@@ -15,10 +15,15 @@ class globalMiddlewareForHostelName
      */
     public function handle($request, Closure $next)
     {
-        if(\session()->has("email")){
-            $id = \DB::select('select sUsers_id from s_users where email = ?', [$request->session("email")])->get();
-            
-        }
+        // if(\session()->has("email")){
+        //     $id = \DB::select('select sUsers_id from s_users where email = ?', [$request->session("email")])->get();
+        //     dd($id);
+        // }
+        // if($request->session()->has('email')){
+        //     dd("got it");
+        // }
+        // dd($request->user());
+        
         return $next($request);
     }
 }
