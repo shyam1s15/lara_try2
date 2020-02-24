@@ -138,3 +138,9 @@ Route::get('test/devansh/try1', function() {
     //
     return view("hostel.student.addstudent");
 })->name("addStudent");
+
+Route::get('test/devanshh/try1', function() {
+    //
+    return view('hostel.room.addrooms');
+})->name("addrooms");
+//Git from Parthik123456
