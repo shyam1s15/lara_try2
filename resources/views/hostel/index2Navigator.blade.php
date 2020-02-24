@@ -59,7 +59,7 @@ font-size: large;
             </a>
             <a href="#">
                 <button type="button" class="btn btn-warning big-btns">
-                    <p class="big-btn-text">Manage sectors</p>
+                    <p class="big-btn-text">Manage FoodZone</p>
                 </button>
             </a>
         </div>
