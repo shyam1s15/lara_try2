@@ -134,7 +134,10 @@ Route::get('test/vd/try1', function() {
 //Git from Parthik123456
 
 
-Route::get('test/devansh/try1', function() {
-    //
-    return view("hostel.student.addstudent");
-})->name("addStudent");
+Route::get('test/devansh/try1',"Hostel\AddStudentController@getAddStudentPage")->name("addStudent");
+
+Route::post('test/devansh/try1Add', 'Hostel\AddStudentController@addStudent')->name("storeStudent");
+
+
+
+
