@@ -26,7 +26,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+// hii
 
 Route::group(['prefix' => 'admin','middleware' => ['adminLoginMiddleware'] ],function(){
     Route::get('login','adminLoginController@login')->name('admin.login');
@@ -117,5 +117,11 @@ Route::get('test/mobile', function () {
 Route::get('test/top-bar', function() {
     //
     return view('test.materia_top_bar');
+});
+//Git from Parthik123456
+
+Route::get('test/bhavesh/try1', function() {
+    //
+    return view('hostel.student.addstudent');
 });
 //Git from Parthik123456
