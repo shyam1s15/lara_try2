@@ -138,3 +138,13 @@ Route::get('test/devansh/try1', function() {
     //
     return view("hostel.student.addstudent");
 })->name("addStudent");
+
+Route::get('test/bhavesh/try1',function(){
+    //
+    return view("hostel.record.record");
+})->name("record");
+
+Route::get('test/bhavesh/try2',function(){
+    //
+    return view("hostel.record.studentrecord");
+})->name("studentrecord");

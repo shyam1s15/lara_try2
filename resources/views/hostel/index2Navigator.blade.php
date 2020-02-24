@@ -42,7 +42,7 @@ font-size: large;
                     <p class="big-btn-text">Update co-workers</p>
                 </button>
             </a>
-            <a href="#">
+            <a href="{{ route('record') }}">
                 <button type="button" class="btn btn-info big-btns">
                     <p class="big-btn-text">Get Various Records</p>
                 </button>
@@ -52,7 +52,7 @@ font-size: large;
                     <p class="big-btn-text">Billing Information</p>
                 </button>
             </a>
-            <a href="{{ route('addRoom') }}">
+            <a href="#">
                 <button type="button" class="btn btn-success big-btns">
                     <p class="big-btn-text">Add Rooms / Update Rooms</p>
                 </button>
