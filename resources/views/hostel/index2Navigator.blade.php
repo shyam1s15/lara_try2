@@ -11,7 +11,7 @@ margin: 40px;
 #grad1 {
 height: 100vh;
 background-color: grey; /* For browsers that do not support gradients */
-background-image: linear-gradient(pink, white); /* Standard syntax (must be last) */
+background-image: linear-gradient(lightblue, lightpink); /* Standard syntax (must be last) */
 }
 .big-btn-text{
 font-size: large;
@@ -24,42 +24,42 @@ font-size: large;
         <div class="row">
             <a href="{{ route('hostelPage') }}">
                 <button type="button" class="btn btn-warning big-btns">
-                    <p class="big-btn-text">Update Hostel Information</p>
+                    <h5 class="big-btn-text">Update Hostel Information</h5>
                 </button>
             </a>
             <a href="#">
                 <button type="button" class="btn btn-success big-btns">
-                    <p class="big-btn-text">Important notice</p>
+                    <h5 class="big-btn-text">Important notice</h5>
                 </button>
             </a>
             <a href="{{ route('addStudent') }}">
                 <button type="button" class="btn btn-warning big-btns">
-                    <p class="big-btn-text">Admint/graduate students</p>
+                    <h5 class="big-btn-text">Admint/graduate students</h5>
                 </button>
             </a>
             <a href="#">
                 <button type="button" class="btn btn-info big-btns">
-                    <p class="big-btn-text">Update co-workers</p>
+                    <h5 class="big-btn-text">Update co-workers</h5>
                 </button>
             </a>
             <a href="#">
                 <button type="button" class="btn btn-info big-btns">
-                    <p class="big-btn-text">Get Various Records</p>
+                    <h5 class="big-btn-text">Get Various Records</h5>
                 </button>
             </a>
             <a href="#">
                 <button type="button" class="btn btn-warning big-btns">
-                    <p class="big-btn-text">Billing Information</p>
+                    <h5 class="big-btn-text">Billing Information</h5>
                 </button>
             </a>
             <a href="{{ route('addRoom') }}">
                 <button type="button" class="btn btn-success big-btns">
-                    <p class="big-btn-text">Add Rooms / Update Rooms</p>
+                    <h5 class="big-btn-text">Add Rooms / Update Rooms</h5>
                 </button>
             </a>
             <a href="#">
                 <button type="button" class="btn btn-warning big-btns">
-                    <p class="big-btn-text">Manage FoodZone</p>
+                    <h5 class="big-btn-text">Manage FoodZone</h5>
                 </button>
             </a>
         </div>
