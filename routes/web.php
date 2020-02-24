@@ -26,7 +26,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+// hii
 
 Route::group(['prefix' => 'admin','middleware' => ['adminLoginMiddleware'] ],function(){
     Route::get('login','adminLoginController@login')->name('admin.login');
@@ -47,11 +47,11 @@ Route::group(['prefix' => 'admin','middleware' => ['adminLoginMiddleware'] ],fun
 
 Route::group(['prefix' => 'hostel'], function() {
     //
-    
+
     Route::get('/', function() {
-        // 
+        //
     });
-    
+
 });
 
 
@@ -89,13 +89,13 @@ Route::get('test5', function() {
     return view("index");
 });
 
-Route::get("getHostelUpdatePage", "Hostel\HostelInfoUpdateController@getHostelUpdatePage");
+Route::get("getHostelUpdatePage", "Hostel\HostelInfoUpdateController@getHostelUpdatePage")->name("hostelPage");
 
-Route::post("updateHostel","Hostel\HostelInfoUpdateController@updateHostel");
+Route::post("updateHostel","Hostel\HostelInfoUpdateController@updateHostel")->name("updateHostel");
 
-Route::get("getAddRoomPage", "Hostel\AddRoomController@getAddRoomPage");
+Route::get("getAddRoomPage", "Hostel\AddRoomController@getAddRoomPage")->name("addRoom");
 
-Route::post("insertRoom","Hostel\AddRoomController@insertRoom");
+Route::post("insertRoom","Hostel\AddRoomController@insertRoom")->name("insertRoom");
 
 Route::get('test/rooms', function() {
     return view('rooms.index');
@@ -105,20 +105,42 @@ Route::get('test/rooms', function() {
 Route::get('test/hostel', function() {
 return view('hostel.index2Navigator');
 });
+Route::get('test/hostel2',function(){
+return view('hostel.index2Navigator');
+})->name("showHostel");
 
 Route::get('test/mobile', function () {
     return view("test.mobile");
 });
 // hello
-
+    
 
 Route::get('test/top-bar', function() {
     //
     return view('test.materia_top_bar');
 });
 //Git from Parthik123456
-Route::get('test/devansh/try1', function() {
+
+Route::get('test/bhavesh/try1', function() {
     //
     return view('hostel.student.addstudent');
 });
+//Git from Parthik123456
+
+Route::get('test/vd/try1', function() {
+    //
+    return view('hostel.student.addstudent');
+})->name("addStudent");
+//Git from Parthik123456
+
+
+Route::get('test/devansh/try1', function() {
+    //
+    return view("hostel.student.addstudent");
+})->name("addStudent");
+
+Route::get('test/devanshh/try1', function() {
+    //
+    return view('hostel.room.addrooms');
+})->name("addrooms");
 //Git from Parthik123456
