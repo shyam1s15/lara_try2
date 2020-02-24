@@ -123,5 +123,5 @@ Route::get('test/top-bar', function() {
 Route::get('test/devansh/try1', function() {
     //
     return view('hostel.student.addstudent');
-});
+})->name("addStudent");
 //Git from Parthik123456

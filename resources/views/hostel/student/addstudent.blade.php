@@ -17,8 +17,8 @@
             </div>
 
             <div class="form-group" >
-            <label ><img src="{{ url('/img/name.png') }}" height="30px" alt="" style="margin-right:10px">Mother name</label>
-            <input type="text" class="form-control" name="no" required placeholder="Enter your Mother name">   
+            <label ><img src="{{ url('/img/name.png') }}" height="30px" alt="" style="margin-right:10px">Mother/Father name</label>
+            <input type="text" class="form-control" name="no" required placeholder="Enter your Mother/father name">   
             </div>
 
             <div class="form-group" >

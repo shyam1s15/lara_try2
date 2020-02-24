@@ -32,7 +32,7 @@ font-size: large;
                     <p class="big-btn-text">Important notice</p>
                 </button>
             </a>
-            <a href="#">
+            <a href="{{ route('addStudent') }}">
                 <button type="button" class="btn btn-warning big-btns">
                     <p class="big-btn-text">Admint/graduate students</p>
                 </button>
