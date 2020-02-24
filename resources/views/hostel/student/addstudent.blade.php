@@ -8,7 +8,7 @@
 <div id="grad1">
     <div class="container">
         <div class="row">
-        <form action="/test/devansh/try1Add" method="POST" style="margin : auto ">
+        <form action="{{ route('storeStudent') }}" method="POST" style="margin : auto ">
     
             {{ csrf_field() }}
             

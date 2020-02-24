@@ -23,17 +23,18 @@ class AddStudentController extends Controller
         $stuAddr = $request->input('stu-addr');
 
         \DB::table('students_models')->insert([
-            ['stu_name'=>$stuName],
-            ['stu_mother'=>$stuMother],
-            ['stu_dob'=>$stuDob],
-            ['stu_geneder'=>$stuGender],
-            ['stu_bloodGrp'=>$stuBlood],
-            ['stu_mob'=>$stuCon1],
-            ['stu_mob2'=>$stuCon2],
-            ['stu_email'=>$stuEmail],
-            ['stu_address'=>$stuAddr],
+            ['stu_name'=>$stuName,
+            'stu_mother'=>$stuMother,
+            'stu_dob'=>$stuDob,
+            'stu_gender'=>$stuGender,
+            'stu_bloodGrp'=>$stuBlood,
+            'stu_mob'=>$stuCon1,
+            'stu_mob2'=>$stuCon2,
+            'stu_email'=>$stuEmail,
+            'stu_address'=>$stuAddr,
+            ]
         ]);
-        dd("inserted");
-        return 0;
+        // dd("inserted");
+        return redirect(route('addStudent'));
     }
 }
