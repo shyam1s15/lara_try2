@@ -13,7 +13,7 @@
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/46.png') }}" height="30px" alt="" style="margin-right:10px"> Starting Room Number</label>
-            <input type="text" class="form-control" name="no" required placeholder="Enter Room Number" style="border-color : green">
+            <input type="text" class="form-control" name="no" required placeholder="Enter Room Number" >
             </div>
 
             <div class="form-group" >
