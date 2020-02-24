@@ -140,11 +140,12 @@ Route::get('test/devansh/try1', function() {
 })->name("addStudent");
 
 Route::get('test/devanshh/try1', 'Hostel\AddRoomController@getAddRoomPage')->name("addRooms");
-Route::post('test/devanshh/try1', 'Hostel\AddRoomController@getAddRoomPage')->name("storeRooms");
+Route::post('test/devanshh/try1', 'Hostel\AddRoomController@storeRoom')->name("storeRooms");
 //Git from Parthik123456
 
 Route::get('test/devansh/try1',"Hostel\AddStudentController@getAddStudentPage")->name("addStudent");
 Route::post('test/devansh/try1store', 'Hostel\AddStudentController@addStudent')->name("storeStudent");
+
 
 // Route::post('', function ($id) {
 // });

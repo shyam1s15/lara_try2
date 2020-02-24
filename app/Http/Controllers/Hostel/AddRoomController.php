@@ -19,8 +19,8 @@ class AddRoomController extends Controller
       $facility = $request->input('facilities');   
 
       if($stop < $start){
-          return back()->withInput();
-        //   ->;
+          return back()->withInput()
+          ->with('start_index_error','The start index must be less than End index');
       }
     }
 }
