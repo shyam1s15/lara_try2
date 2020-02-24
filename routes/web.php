@@ -120,7 +120,8 @@ Route::get('test/top-bar', function() {
     return view('test.materia_top_bar');
 });
 //Git from Parthik123456
-Route::get('test/devansh/try1', function() {
+
+Route::get('test/vd/try1', function() {
     //
     return view('hostel.student.addstudent');
 })->name("addStudent");

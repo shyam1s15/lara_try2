@@ -54,10 +54,7 @@
             <input type="email" class="form-control" name="aval_mem" placeholder="Enter your Email id">   
             </div>
  
-            <div class="form-group" >
-            <label ><img src="{{ url('/img/ins.png') }}" height="30px" alt="" style="margin-right:10px">Institute</label>
-            <input type="text" class="form-control" name="aval_mem" placeholder="Enter your institute name">   
-            </div>
+            
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/add.png') }}" height="30px" alt="" style="margin-right:10px">Address</label>
