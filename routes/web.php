@@ -126,23 +126,15 @@ Route::get('test/bhavesh/try1', function() {
     return view('hostel.student.addstudent');
 });
 //Git from Parthik123456
-=======
-Route::get('test/devansh/try1', function() {
-=======
 
 Route::get('test/vd/try1', function() {
->>>>>>> 80f0406a886eaa6095dba45e6f35f1ea7b58164b
     //
     return view('hostel.student.addstudent');
 })->name("addStudent");
 //Git from Parthik123456
-<<<<<<< HEAD
->>>>>>> a55f6b980e4db7dff329d55c3c89cf499f4f27fc
-=======
 
 
 Route::get('test/devansh/try1', function() {
     //
     return view("hostel.student.addstudent");
 })->name("addStudent");
->>>>>>> 80f0406a886eaa6095dba45e6f35f1ea7b58164b
