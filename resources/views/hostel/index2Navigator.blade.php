@@ -27,7 +27,7 @@ font-size: large;
                     <h5 class="big-btn-text">Update Hostel Information</h5>
                 </button>
             </a>
-            <a href="#">
+            <a href="{{ route('showNotice') }}">
                 <button type="button" class="btn btn-success big-btns">
                     <h5 class="big-btn-text">Important notice</h5>
                 </button>

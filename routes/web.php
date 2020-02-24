@@ -147,7 +147,7 @@ Route::post('test/devanshh/try1', 'Hostel\AddRoomController@storeRoom')->name("s
 Route::get('test/devansh/try2', function() {
     //
     return view('hostel.notice.addnotice');
-})->name("addrooms");
+})->name("showNotice");
 //Git from Parthik123456
 
 Route::get('test/devansh/try3', function() {
