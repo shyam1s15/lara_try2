@@ -52,7 +52,7 @@ font-size: large;
                     <p class="big-btn-text">Billing Information</p>
                 </button>
             </a>
-            <a href="{{ route('addRoom') }}">
+            <a href="{{ route('addRooms') }}">
                 <button type="button" class="btn btn-success big-btns">
                     <p class="big-btn-text">Add Rooms / Update Rooms</p>
                 </button>

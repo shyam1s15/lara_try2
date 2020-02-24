@@ -8,27 +8,27 @@
 <div id="grad1">
     <div class="container">
         <div class="row">
-        <form action="insertRoom" method="POST" style="margin : auto ">
+        <form action="{{ route('storeRooms') }}" method="POST" style="margin : auto ">
             <h2 style=" color:green; margin : 20px 150px ">Add Rooms</h2>
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/46.png') }}" height="30px" alt="" style="margin-right:10px"> Starting Room Number</label>
-            <input type="text" class="form-control" name="no" required placeholder="Enter Room Number" style="border-color : green">
+            <input type="text" class="form-control" name="start-room" required placeholder="Enter Room Number" style="border-color : green">
             </div>
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/46.png') }}" height="30px" alt="" style="margin-right:10px">Ending Room Number</label>
-            <input type="text" class="form-control" name="total_mem" required placeholder="Enter last Room Number " style="border-color : green">
+            <input type="text" class="form-control" name="end-room" required placeholder="Enter last Room Number " style="border-color : green">
             </div>
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/47.png') }}" height="30px" alt="" style="margin-right:10px">Member Capacity</label>
-            <input type="text" class="form-control" name="aval_mem" placeholder="Enter member capacity" style="border-color : green">
+            <input type="text" class="form-control" name="total-capacity" placeholder="Enter member capacity" style="border-color : green">
             </div>
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/78.png') }}" height="30px" alt="" style="margin-right:10px">Categories</label>
-            <input type="text" class="form-control" name="aval_mem" placeholder="Enter your category" style="border-color : green">
+            <input type="text" class="form-control" name="category" placeholder="Enter your category" style="border-color : green">
             </div>
 
             <div class="form-group" >
