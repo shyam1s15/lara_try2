@@ -143,9 +143,34 @@ Route::get('test/devanshh/try1', 'Hostel\AddRoomController@getAddRoomPage')->nam
 Route::post('test/devanshh/try1', 'Hostel\AddRoomController@storeRoom')->name("storeRooms");
 //Git from Parthik123456
 
-Route::get('test/devansh/try1',"Hostel\AddStudentController@getAddStudentPage")->name("addStudent");
-Route::post('test/devansh/try1store', 'Hostel\AddStudentController@addStudent')->name("storeStudent");
 
+Route::get('test/devansh/try2', function() {
+    //
+    return view('hostel.notice.addnotice');
+})->name("addrooms");
+//Git from Parthik123456
 
-// Route::post('', function ($id) {
-// });
+Route::get('test/devansh/try3', function() {
+    //
+    return view('hostel.student.detail.stuhistory');
+})->name("stuhistory");
+//Git from Parthik123456
+
+Route::get('test/devansh/try4', function() {
+    //
+    return view('hostel.student.studetail');
+})->name("studetail");
+//Git from Parthik123456
+
+Route::get('test/devansh/try5', function() {
+    //
+    return view('hostel.student.roomalo');
+})->name("roomalo");
+//Git from Parthik123456
+
+Route::get('test/devansh/try6', function() {
+    //
+    return view('hostel.student.fees');
+})->name("fees");
+//Git from Parthik123456
+
