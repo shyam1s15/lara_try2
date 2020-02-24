@@ -120,8 +120,6 @@ Route::get('test/top-bar', function() {
     return view('test.materia_top_bar');
 });
 //Git from Parthik123456
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 Route::get('test/bhavesh/try1', function() {
     //
