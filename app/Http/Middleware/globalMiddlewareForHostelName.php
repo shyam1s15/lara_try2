@@ -22,6 +22,8 @@ class globalMiddlewareForHostelName
         // if($request->session()->has('email')){
         //     dd("got it");
         // }
+        // dd($request->user());
+        
         return $next($request);
     }
 }

@@ -112,6 +112,7 @@ return view('hostel.index2Navigator');
 Route::get('test/mobile', function () {
     return view("test.mobile");
 });
+// hello
 
 
 Route::get('test/top-bar', function() {
@@ -119,9 +120,17 @@ Route::get('test/top-bar', function() {
     return view('test.materia_top_bar');
 });
 //Git from Parthik123456
+<<<<<<< HEAD
 
 Route::get('test/bhavesh/try1', function() {
     //
     return view('hostel.student.addstudent');
 });
 //Git from Parthik123456
+=======
+Route::get('test/devansh/try1', function() {
+    //
+    return view('hostel.student.addstudent');
+});
+//Git from Parthik123456
+>>>>>>> a55f6b980e4db7dff329d55c3c89cf499f4f27fc
