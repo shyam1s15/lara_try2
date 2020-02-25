@@ -27,7 +27,7 @@ font-size: large;
                     <h5 class="big-btn-text">Update Hostel Information</h5>
                 </button>
             </a>
-            <a href="#">
+            <a href="{{ route('showNotice') }}">
                 <button type="button" class="btn btn-success big-btns">
                     <h5 class="big-btn-text">Important notice</h5>
                 </button>
@@ -37,7 +37,7 @@ font-size: large;
                     <h5 class="big-btn-text">Admint/graduate students</h5>
                 </button>
             </a>
-            <a href="#">
+            <a href="{{route('createCoworker')}}">
                 <button type="button" class="btn btn-info big-btns">
                     <h5 class="big-btn-text">Update co-workers</h5>
                 </button>
@@ -52,7 +52,7 @@ font-size: large;
                     <h5 class="big-btn-text">Billing Information</h5>
                 </button>
             </a>
-            <a href="{{ route('addRoom') }}">
+            <a href="{{ route('addRooms') }}">
                 <button type="button" class="btn btn-success big-btns">
                     <h5 class="big-btn-text">Add Rooms / Update Rooms</h5>
                 </button>

@@ -22,18 +22,18 @@ font-size: large;
 <div id="grad1">
     <div class="container">
         <div class="row">
-            <a href="{{ route('stuhistory') }}">
+            <a href="{{ route('studetail') }}">
                 <button type="button" class="btn btn-info big-btns">
                     <h5 class="big-btn-text">Student Details</h5>
                 </button>
             </a>
-            <a href="{{ route('studetail')}}">
+            <a href="{{ route('createStuHistory')}}">
                 <button type="button" class="btn btn-dark big-btns">
                     <h5 class="big-btn-text">Student History</h5>
                 </button>
             </a>
         
-            <a href="{{ route('roomalo')}}">
+            <a href="{{ route('createRoomalo')}}">
                 <button type="button" class="btn btn-info big-btns">
                     <h5 class="big-btn-text">Room Allocation</h5>
                 </button>

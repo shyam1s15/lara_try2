@@ -17,14 +17,14 @@
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/name34.png') }}" height="30px" alt="" style="margin-right:10px">Room number</label>
-            <input type="text" class="form-control" name="stu-name" required placeholder="Enter your Room number" style=" border-color : black" >
+            <input type="text" class="form-control" name="room-no" required placeholder="Enter your Room number" style=" border-color : black" >
             </div>
 
     
 
             <div class="form-group" >
-            <label ><img src="{{ url('/img/name12.png') }}" height="30px" alt="" style="margin-right:10px">Student Name</label>
-            <input type="text" class="form-control" name="stu-contact1" maxlength="100" required placeholder="Enter student Name" style=" border-color : black">
+            <label ><img src="{{ url('/img/name12.png') }}" height="30px" alt="" style="margin-right:10px">Student ER</label>
+            <input type="text" class="form-control" name="stu_er" maxlength="100" required placeholder="Enter student Enrollment" style=" border-color : black">
 
 
 <br>
