@@ -17,19 +17,19 @@
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/name12.png') }}" height="30px" alt="" style="margin-right:10px">ER number</label>
-            <input type="text" class="form-control" name="stu-name" required placeholder="Enter your ER" style=" border-color : black" >
+            <input type="text" class="form-control" name="stu-er" required placeholder="Enter your ER" style=" border-color : black" >
             </div>
 
     
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/phon.png') }}" height="30px" alt="" style="margin-right:10px">Student Name</label>
-            <input type="text" class="form-control" name="stu-contact1" maxlength="100" required placeholder="Enter Student name" style=" border-color : black">
+            <input type="text" class="form-control" name="stu-name" maxlength="100" required placeholder="Enter Student name" style=" border-color : black">
             </div>
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/phon.png') }}" height="30px" alt="" style="margin-right:10px"> Amount</label>
-            <input type="text" class="form-control" name="stu-contact1" maxlength="100" required placeholder="Enter Fee amount" style=" border-color : black">
+            <input type="text" class="form-control" name="stu-fee-amount" maxlength="100" required placeholder="Enter Fee amount" style=" border-color : black">
             </div>
 
             <div class="form-group" >

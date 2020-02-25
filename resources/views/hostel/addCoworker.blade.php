@@ -11,8 +11,6 @@
         <form action="{{route('storeCoworker')}}" method="POST" style="margin : auto ">
             <h2 style="color:maroon; margin : 10px 100px">Update Co-Workers Details</h2>
 
-
-
             <div class="form-group" >
             <label style="color:#003366;" ><img src="{{ url('/img/name.png') }}" height="30px" alt="" style="margin-right:10px">Name</label>
             <input type="text" class="form-control" name="no" required placeholder="Enter your Full Name" >
