@@ -13,7 +13,7 @@
             {{ csrf_field() }}
             
             @csrf
-            <h2 style="color:green; margin : 40px 100px">Important Notice</h2>
+            <h2 style="color:green; margin : 40px 100px">Various Records </h2>
 
             <center>
             <div class="form-group" >
