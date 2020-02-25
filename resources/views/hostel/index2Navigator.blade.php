@@ -42,7 +42,7 @@ font-size: large;
                     <h5 class="big-btn-text">Update co-workers</h5>
                 </button>
             </a>
-            <a href="#">
+            <a href="{{ route('record') }}">
                 <button type="button" class="btn btn-info big-btns">
                     <h5 class="big-btn-text">Get Various Records</h5>
                 </button>
