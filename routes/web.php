@@ -203,3 +203,20 @@ Route::post('test/availableRoom', 'Hostel\availableRoomController@storeAvailable
 Route::get('sendMailToParent','MailController@sendMailToParent' )->name('sendParentMail');
 // generating pdfs
 Route::get('pdfview',array('as'=>'pdfview','uses'=>'ItemController@pdfview'));
+Route::get('/jakas',function (){
+    return view('hostel.record.record');
+} )->name('record');
+Route::get('/jakas2',function (){
+    return view('hostel.record.studentrecord');
+} )->name('studentrecord');
+Route::get('/jakas3',function (){
+    return view('hostel.record.roomrecord');
+} )->name('roomrecord');
+Route::get('/jakas4',function (){
+    return view('hostel.record.foodzone');
+} )->name('foodzone');
+
+Route::get('/jakas5',function (){
+    return view('hostel.record.record');
+} )->name('co_workers');
+
