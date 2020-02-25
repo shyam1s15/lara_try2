@@ -11,7 +11,7 @@ class coWorkerController extends Controller
     public function createCoworker(){
         return view("hostel.addCoworker");
     }
-    public function storeCoworker(){
+    public function storeCoworker(Request $request){
         // bakrichor??
     }
 }
