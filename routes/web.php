@@ -148,3 +148,18 @@ Route::get('test/bhavesh/try2',function(){
     //
     return view("hostel.record.studentrecord");
 })->name("studentrecord");
+
+Route::get('test/bhavesh/try3',function(){
+    //
+    return view("hostel.record.roomrecord");
+})->name("roomrecord");
+
+Route::get('test/bhavesh/try4',function(){
+    //
+    return view("hostel.record.foodzone");
+})->name("foodzone");
+
+Route::get('test/bhavesh/try5',function(){
+    //
+    return view("hostel.record.co_workers");
+})->name("co_workers");

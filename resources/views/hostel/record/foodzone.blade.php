@@ -1,9 +1,9 @@
 @extends('master.base')
 
 @section('content')
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
@@ -28,14 +28,12 @@
 }
 
 #myTable th, #myTable td {
-  content="width=device-width";
   text-align: left;
   padding: 12px;
 }
 
 #myTable tr {
   border-bottom: 1px solid #ddd;
-  
 }
 
 #myTable tr.header, #myTable tr:hover {
@@ -51,15 +49,21 @@
 
 <table id="myTable">
   <tr class="header">
-    <th style="width:25;">Name</th>
-    <th style="width:25;">Last Name</th>
-    <th style="width:25;">Mobile Number</th>
-    <th style="width:25;">Email</th>
-    <th style="width:25;">Address</th>
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Last Name</th>
+    <th style="width:60%;">DOB</th>
+    <th style="width:40%;">Gender</th>
+    <th style="width:60%;">Blood Group</th>
+    <th style="width:40%;">Mobaile Number</th>
+    <th style="width:60%;">Email</th>
+    <th style="width:40%;">Address</th>
   </tr>
   <tr>
     <td>Bhavesh</td>
     <td>Rathod</td>
+    <td>1/11/2000</td>
+    <td>Male</td>
+    <td>O+</td>
     <td>7359623514</td>
     <td>right2shiv.lp@gmail.com</td>
     <td>At:Junagadh</td>
@@ -68,6 +72,9 @@
   <tr>
     <td>vandan</td>
     <td>dave</td>
+    <td>1/11/2002</td>
+    <td>Male</td>
+    <td>O+</td>
     <td>8989623514</td>
     <td>riyuhyht2shujk.lp@gmail.com</td>
     <td>At:Junagadh</td>
@@ -76,6 +83,9 @@
   <tr>
     <td>chintan</td>
     <td>bhalodiya</td>
+    <td>1/11/2000</td>
+    <td>Male</td>
+    <td>O+</td>
     <td>995962390</td>
     <td>chintanv.lp@gmail.com</td>
     <td>At:Junagadh</td>
