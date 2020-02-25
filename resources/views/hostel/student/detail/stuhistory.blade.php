@@ -8,12 +8,18 @@
 <div id="grad1">
     <div class="container">
         <div class="row">
-        <form action="/test/devansh/try1Add" method="POST" style="margin : auto ">
+        <form action="{{route('storeStudent')}}" method="POST" style="margin : auto ">
     
             {{ csrf_field() }}
             
             @csrf
             <h2 style="color:orange; margin : 10px 100px">Student Details</h2>
+
+
+            <div class="form-group" >
+                <label ><img src="{{ url('/img/id.png') }}" height="30px" alt="" style="margin-right:10px">Erollment number</label>
+                <input type=" text" class="form-control" name="stu-enroll" required placeholder="Enter your ER number" style=" border-color : orange" >
+            </div>
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/name12.png') }}" height="30px" alt="" style="margin-right:10px">Name</label>
@@ -25,10 +31,6 @@
             <input type="text" class="form-control" name="stu-mother" required placeholder="Enter your Mother name" style=" border-color : orange" >
             </div>
 
-            <div class="form-group" >
-            <label ><img src="{{ url('/img/id.png') }}" height="30px" alt="" style="margin-right:10px">Erollment number</label>
-            <input type=" text" class="form-control" name="stu-mother" required placeholder="Enter your ER number" style=" border-color : orange" >
-            </div>
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/cale.png') }}" height="30px" alt="" style="margin-right:10px">Date of Birth</label>
