@@ -186,3 +186,10 @@ Route::post('test/sk/try1','Hostel\coWorkerController@storeCoworker')->name('sto
 
 //Git from Parthik123456
 
+
+
+Route::get('test/devansh/try7', function() {
+    //
+    return view('hostel.student.coworker');
+})->name("coworker");
+//Git from Parthik123456
