@@ -56,6 +56,7 @@ class insertUserIfNotExists
         \session(['u_id'=>$id]);
         \session(['email'=>$email]);
         \session(['hname'=>$hname->hostel_name]);
+        \session()->save();
         // print_r($hname);
         // dd($hname->hostel_name);
         // print_r($hname[0]);

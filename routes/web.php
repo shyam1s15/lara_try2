@@ -47,11 +47,11 @@ Route::group(['prefix' => 'admin','middleware' => ['adminLoginMiddleware'] ],fun
 
 Route::group(['prefix' => 'hostel'], function() {
     //
-    
+
     Route::get('/', function() {
-        // 
+        //
     });
-    
+
 });
 
 
@@ -71,7 +71,7 @@ Route::get('test2',function (){
 });
 
 Route::get('test/login/google', 'Auth\LoginController@redirectToProvider');
-Route::get('test/login/google/callback', 'Auth\LoginController@handleProviderCallback');
+Route::post('test/login/google/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('test3',function (){
     return view('test.test');
@@ -139,27 +139,67 @@ Route::get('test/devansh/try1', function() {
     return view("hostel.student.addstudent");
 })->name("addStudent");
 
-Route::get('test/bhavesh/try1',function(){
-    //
-    return view("hostel.record.record");
-})->name("record");
+Route::get('test/devanshh/try1', 'Hostel\AddRoomController@getAddRoomPage')->name("addRooms");
+Route::post('test/devanshh/try1', 'Hostel\AddRoomController@storeRoom')->name("storeRooms");
+//Git from Parthik123456
 
-Route::get('test/bhavesh/try2',function(){
-    //
-    return view("hostel.record.studentrecord");
-})->name("studentrecord");
 
-Route::get('test/bhavesh/try3',function(){
-    //
-    return view("hostel.record.roomrecord");
-})->name("roomrecord");
+Route::get('/test/create/addStudentPage', 'Hostel\AddStudentController@getAddStudentPage')->name('createStudent');
+Route::post('/test/store/storeStudent','Hostel\AddStudentController@addStudent')->name('storeStudent');
 
-Route::get('test/bhavesh/try4',function(){
-    //
-    return view("hostel.record.foodzone");
-})->name("foodzone");
 
-Route::get('test/bhavesh/try5',function(){
+Route::get('/test/create/updateStudentPage', 'Hostel\AddStudentController@showStudentHistory')->name('createStuHistory');
+Route::post('/test/create/updateStudentPage', 'Hostel\AddStudentController@addStudentHistory')->name('storeStuHistory');
+
+
+
+Route::get('test/devansh/try2', function() {
     //
-    return view("hostel.record.co_workers");
-})->name("co_workers");
+    return view('hostel.notice.addnotice');
+})->name("showNotice");
+//Git from Parthik123456
+
+Route::get('test/devansh/try3', function() {
+    //
+    return view('hostel.student.detail.stuhistory');
+})->name("studetail");
+//Git from Parthik123456
+
+Route::get('test/devansh/try4', function() {
+    //
+    return view('hostel.student.studetail');
+})->name("stuhistory");
+//Git from Parthik123456
+
+Route::get('test/devansh/try5', 'Hostel\roomAllocationController@createAllocation')->name("createRoomalo");
+Route::post('test/devansh/try5', 'Hostel\roomAllocationController@storeAllocation')->name("storeRoomalo");
+
+//Git from Parthik123456
+
+Route::get('test/devansh/try6', function() {
+    //
+    return view('hostel.student.fees');
+})->name("fees");
+
+Route::get('test/sk/try1','Hostel\coWorkerController@createCoworker')->name('createCoworker');
+Route::post('test/sk/try1','Hostel\coWorkerController@storeCoworker')->name('storeCoworker');
+
+//Git from Parthik123456
+
+
+
+Route::get('test/devansh/try7', function() {
+    //
+    return view('hostel.student.coworker');
+})->name("coworker");
+//Git from Parthik123456
+
+
+Route::get('test/availableRoom', 'Hostel\availableRoomController@createAvailableRoom')->name('getAvailableRoom');
+
+Route::post('test/availableRoom', 'Hostel\availableRoomController@storeAvailableRoom')->name('storeInAvailableRoom');
+
+
+Route::get('sendMailToParent','MailController@sendMailToParent' )->name('sendParentMail');
+// generating pdfs
+Route::get('pdfview',array('as'=>'pdfview','uses'=>'ItemController@pdfview'));

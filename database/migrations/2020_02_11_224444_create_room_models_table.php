@@ -15,8 +15,9 @@ class CreateRoomModelsTable extends Migration
     {
         Schema::create('room_models', function (Blueprint $table) {
             $table->bigIncrements('room_id');
-            $table->integer('room_strength')->unsigned()->nullable()->default(4);
-            // $table->foreign('')->references('id')->on('users')->onDelete('cascade');
+            $table->integer('room_strength')->unsigned()->default(4);
+            $table->char('category', 30)->default('');
+            $table->string('room_facilities', 300)->nullable()->default('');
             $table->timestamps();
         });
     }

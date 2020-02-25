@@ -31,13 +31,15 @@ class adminLoginController extends Controller
         //     print_r($value);
         //     echo ("<br>");
         // }
+        // $request->session()->flush();
+        \Session::flush();
         \event(new saveLoginDetails($user));
         \event(new TheNewGuyEvent());
         return \redirect("test/hostel");
         // return \redirect('test2');
     }
 
-    public function facebookCredentialLogin(){
+    public function facebookCredentialLogin(Request $request){
         $user = Socialite::driver('facebook')->user();
         
         foreach($user as $key=>$value){
@@ -46,6 +48,7 @@ class adminLoginController extends Controller
             print_r($value);
             echo ("<br>");
         }
+        
         return "i am done";
     }
 
@@ -55,5 +58,4 @@ class adminLoginController extends Controller
     public function getFacebookCredentialLogin(){
         return Socialite::driver('facebook')->redirect();
     }
-    
 }

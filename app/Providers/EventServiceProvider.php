@@ -26,6 +26,10 @@ class EventServiceProvider extends ServiceProvider
             "App\Listeners\checkUserExists",
             "App\Listeners\insertUserIfNotExists",
         ],
+        'App\Events\sendParentEmail'=>[
+            "App\Listeners\prepareDatabase",
+            "App\Listeners\sendMail",
+        ]
     ];
 
     /**
