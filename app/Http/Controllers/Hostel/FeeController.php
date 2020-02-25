@@ -12,9 +12,13 @@ class FeeController extends Controller
         return view('hostel.student.fees');
     }
     public function storeFee(Request $request){
-        $request->input('');
-        $request->input('');
-        $request->input('');
-        $request->input('');
+        $ER = $request->input('stu-er');
+        $name = $request->input('stu-name');
+        $feeAmt = $request->input('stu-fee-amount');
+        $feeReceived = $request->input('stu-fee-submit-date');
+        $due = $request->input('stu-fee-due-date');
+        
+        
+
     }
 }

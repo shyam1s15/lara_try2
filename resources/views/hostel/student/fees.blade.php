@@ -34,12 +34,12 @@
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/phon.png') }}" height="30px" alt="" style="margin-right:10px">Given Date</label>
-            <input type="text" class="form-control" name="stu-contact1" maxlength="100" required placeholder="Enter given date " style=" border-color : black">
+            <input type="text" class="form-control" name="stu-fee-submit-date" maxlength="100" required placeholder="Enter given date " style=" border-color : black">
             </div>
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/phon.png') }}" height="30px" alt="" style="margin-right:10px">Due Date</label>
-            <input type="text" class="form-control" name="stu-contact1" maxlength="100" required placeholder="Enter Due
+            <input type="text" class="form-control" name="stu-fee-due-date" maxlength="100" required placeholder="Enter Due
              date " style=" border-color : black">
             </div>
 
