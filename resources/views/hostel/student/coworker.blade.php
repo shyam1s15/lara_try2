@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
         <form action="insertRoom" method="POST" style="margin : auto ">
-            <h2 style="color:Blue; margin : 10px 100px">Update Co-Workers Details</h2>
+            <h2 style="color:#33D1FF; margin : 10px 100px">Update Co-Workers Details</h2>
 
 
 
