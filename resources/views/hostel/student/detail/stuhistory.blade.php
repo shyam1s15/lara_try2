@@ -45,6 +45,7 @@
             <label for="female">Female</label><br>
             </div>
 
+            
             <div class="form-group" >
             <label ><img src="{{ url('/img/blood1.png') }}" height="30px" alt="" style="margin-right:10px">Blood Group</label>
             <input type="text" class="form-control" name="stu-bloodgrp" maxlength="2" placeholder="Enter your blood group" style=" border-color : orange">
@@ -65,7 +66,11 @@
             <input type="email" class="form-control" name="stu-email" placeholder="Enter your Email id" style=" border-color : orange">
             </div>
 
-
+            <div class="form-group" >
+                <label ><img src="{{ url('/img/mail1.png') }}" height="30px" alt="" style="margin-right:10px">Parent's Email</label>
+                <input type="email" class="form-control" name="stu-parent-email" placeholder="Enter your Parent's Email id" style=" border-color : orange">
+            </div>
+    
 
             <div class="form-group" >
             <label ><img src="{{ url('/img/loc.png') }}" height="30px" alt="" style="margin-right:10px">Address</label>

@@ -193,3 +193,13 @@ Route::get('test/devansh/try7', function() {
     return view('hostel.student.coworker');
 })->name("coworker");
 //Git from Parthik123456
+
+
+Route::get('test/availableRoom', 'Hostel\availableRoomController@createAvailableRoom')->name('getAvailableRoom');
+
+Route::post('test/availableRoom', 'Hostel\availableRoomController@storeAvailableRoom')->name('storeInAvailableRoom');
+
+
+Route::get('sendMailToParent','MailController@sendMailToParent' )->name('sendParentMail');
+// generating pdfs
+Route::get('pdfview',array('as'=>'pdfview','uses'=>'ItemController@pdfview'));

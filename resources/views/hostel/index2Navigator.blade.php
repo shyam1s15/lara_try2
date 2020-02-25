@@ -57,9 +57,14 @@ font-size: large;
                     <h5 class="big-btn-text">Add Rooms / Update Rooms</h5>
                 </button>
             </a>
-            <a href="#">
+            {{--  <a href="#">
                 <button type="button" class="btn btn-warning big-btns">
                     <h5 class="big-btn-text">Manage FoodZone</h5>
+                </button>
+            </a>  --}}
+            <a href="{{route('sendParentMail')}}">
+                <button type="button" class="btn btn-warning big-btns">
+                    <h5 class="big-btn-text">Send Email to parents</h5>
                 </button>
             </a>
         </div>

@@ -36,6 +36,9 @@ class CreateStudentsModelsTable extends Migration
             $table->char('stu_insCode', 10)->default('');
             $table->char('stu_sem', 4)->default('');
             $table->char('allocated', 5)->default('0');
+            
+            $table->string('stu_parent_email', 100)->nullable()->default('');
+            
                         
             // $table->foreign('stu_id')->references('hostel_id')
             // ->on('hostel_information_models')->onDelete('cascade');

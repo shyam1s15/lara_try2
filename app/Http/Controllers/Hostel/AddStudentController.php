@@ -12,8 +12,9 @@ class AddStudentController extends Controller
         return view('hostel.student.addstudent');
     }
     public function addStudent(Request $request){
+        $stuER = $request->input('stu-enroll');
         $stuName = $request->input('stu-name');
-        $stuEr = $request->input('stu-er');
+        // $stuEr = $request->input('stu-er');
         $stuMother = $request->input('stu-mother');
         $stuDob = $request->input('stu-dob');
         $stuGender = $request->input('stu-gender');
@@ -22,10 +23,11 @@ class AddStudentController extends Controller
         $stuCon2 = $request->input('stu-contact2');
         $stuEmail = $request->input('stu-email');
         $stuAddr = $request->input('stu-addr');
-
+        $stuParentEmail = $request->input('stu-parent-email');
         \DB::table('students_models')->insert([
-            ['stu_name'=>$stuName,
-            'stu_er'=>$stuEr,
+            ['stu_er'=>$stuER,
+            'stu_name'=>$stuName,
+            // 'stu_er'=>$stuEr,
             'stu_mother'=>$stuMother,
             'stu_dob'=>$stuDob,
             'stu_gender'=>$stuGender,
@@ -34,6 +36,7 @@ class AddStudentController extends Controller
             'stu_mob2'=>$stuCon2,
             'stu_email'=>$stuEmail,
             'stu_address'=>$stuAddr,
+            'stu_parent_email'=>$stuParentEmail
             ]
         ]);
         // dd("inserted");

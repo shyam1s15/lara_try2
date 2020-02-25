@@ -16,11 +16,11 @@
             <h2 style="color:green; margin : 40px 100px">Important Notice</h2>
 
             <center>
-            <div class="form-group" >
-            <div class="alert alert-primary" role="alert">
-            <h5><a href="/test/hostel2" style="color : green">Student late Entry</a></h5>
-            </div>
-            </div>
+                <div class="form-group" >
+                <div class="alert alert-primary" role="alert">
+                <h5><a href="/test/hostel2" style="color : green">Student late Entry</a></h5>
+                </div>
+                </div>
 
             <div class="form-group" >
             <div class="alert alert-secondary" role="alert">

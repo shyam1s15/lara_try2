@@ -177,6 +177,8 @@ return [
 
         // google login stuffs below
         Laravel\Socialite\SocialiteServiceProvider::class,
+        // for pdf providing
+        Barryvdh\DomPDF\ServiceProvider::class,
     ],
 
     /*
@@ -230,6 +232,8 @@ return [
 
         // google logins below
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        // for pdf
+        'PDF' => Barryvdh\DomPDF\Facade::class,
     ],
 
 ];
