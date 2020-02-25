@@ -8,7 +8,7 @@
 <div id="grad1">
     <div class="container">
         <div class="row">
-        <form action="insertRoom" method="POST" style="margin : auto ">
+        <form action="{{route('storeCoworker')}}" method="POST" style="margin : auto ">
             <h2 style="color:maroon; margin : 10px 100px">Update Co-Workers Details</h2>
 
 
