@@ -176,3 +176,10 @@ Route::get('test/devansh/try6', function() {
 })->name("fees");
 //Git from Parthik123456
 
+
+
+Route::get('test/devansh/try7', function() {
+    //
+    return view('hostel.student.coworker');
+})->name("coworker");
+//Git from Parthik123456
